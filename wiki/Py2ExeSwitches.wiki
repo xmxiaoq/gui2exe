@@ -1,5 +1,5 @@
 #labels Featured
-= Description of Py2Exe Options =
+= Description of the !Py2Exe Options =
 
 == Introduction ==
 This section provides information about the compiler switches (aka options) available when compiling a Python script using py2exe. Most of the options available with py2exe have been implemented in *GUI2Exe*, and the exceptions are clearly marked in this Wiki page. 
