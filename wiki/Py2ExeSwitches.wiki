@@ -11,7 +11,7 @@ This variable can assume two values (at the moment). It can be either "windows" 
   * windows: builds an executable for a GUI-based application;
   * console: creates an executable for a console program (i.e., no graphical interface stuff involved).
 
-http://xoomer.alice.it/infinity77/main/images/icons/exclamation.gif The other options currently available in py2exe, namely service, com_server and ctypes_com_server are currently not implemented in *GUI2Exe* . 
+http://gui2exe.googlecode.com/svn/trunk/docs/images/icons/exclamation.gif The other options currently available in py2exe, namely service, com_server and ctypes_com_server are currently not implemented in *GUI2Exe* . 
 
 If you're interested in one of the missing options, please let me know (I have never used them).
 
@@ -40,7 +40,7 @@ This option, if activated, creates a compressed zip archive (zipfile). It can be
   * No Compression: the zipfile will be created using the `zipfile.ZIP_STORED` Python option;
   * With Compression: the zipfile will be created using the `zipfile.ZIP_DEFLATED` Python option.
 
-http://xoomer.alice.it/infinity77/main/images/icons/exclamation.gif If you specify the *Skip Archive* option, compression can not be activated (no zipfile to compress). 
+http://gui2exe.googlecode.com/svn/trunk/docs/images/icons/exclamation.gif If you specify the *Skip Archive* option, compression can not be activated (no zipfile to compress). 
 
 Compression activated will obviously create a smaller zipfile.
 
@@ -61,14 +61,14 @@ Specifying a level of *2* includes the .pyd and .dll files into the zip-archive 
 
 Using a level of *1* includes the .pyd and .dll files into the zip-archive or the executable itself, and does the same for pythonXY.dll. The advantage is that you only need to distribute one file per exe, which will however be quite large. The disadvantage of this scheme is that it is impossible to load other extensions from the file system, the application will crash with a fatal Python error if you try this.
 
-http://xoomer.alice.it/infinity77/main/images/icons/exclamation.gif The Bundle Files option is currently not available on 64 bit machines (py2exe 0.6.6).
+http://gui2exe.googlecode.com/svn/trunk/docs/images/icons/exclamation.gif The Bundle Files option is currently not available on 64 bit machines (py2exe 0.6.6).
 
 
 === Zipfile ===
 
 By activating this option in *GUI2Exe*, you can specify a name for the compressed zip file where py2exe will put all the bytecode-compiled Python modules. If you don't activate this option, or the zipfile name is empty, the default in *GUI2Exe* is to use *zipfile*=None. This means the compiled bytecode will be attached to the executable itself and no zip file will be created in your *dist* directory.
 
-http://xoomer.alice.it/infinity77/main/images/icons/exclamation.gif If you specify the *Skip Archive* option, *zipfile* can not be None.
+http://gui2exe.googlecode.com/svn/trunk/docs/images/icons/exclamation.gif If you specify the *Skip Archive* option, *zipfile* can not be None.
 
 
 === Dist Directory ===
@@ -88,7 +88,7 @@ This section deals with the options py2exe offers to forcibly include (or exclud
 
 You can easily add this items in *GUI2Exe* by simply clicking on the list control you wish to edit and hitting Ctrl+A to add items. To remove them, you can select the items and either hit Del on the keyboard or right-click and choose "Delete selected".
 
-http://xoomer.alice.it/infinity77/main/images/icons/go.gif The *Includes* option is stronger than the *Excludes* one. So, if a module is present in both *Includes* and *Excludes*, it will be included in your final distribution. 
+http://gui2exe.googlecode.com/svn/trunk/docs/images/icons/go.gif The *Includes* option is stronger than the *Excludes* one. So, if a module is present in both *Includes* and *Excludes*, it will be included in your final distribution. 
 
 
 === Data Files ===
